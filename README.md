@@ -32,3 +32,6 @@ Since the kext now includes code, The OpenCore config.plist needs to include the
 
 Another issue for my Macmini8,1 is that `serial_init` does not get called or it doesn't enable xnu serial port output. For this, I made Lilu.kext call `serial_init` itself.
 - https://q.gudangbibitku.com/host-https-github.com/joevt/Lilu/commit/c5d0525571e1f1860f5740a2d6289cf156ce19a9
+
+## Future changes
+- Allow this to work when an eGPU or other Thunderbolt devices are connected. This may require conversion to a Lilu dependant kext which can redo the xnu serial port quirk of OpenCore if the PMIO address of the serial port changes.

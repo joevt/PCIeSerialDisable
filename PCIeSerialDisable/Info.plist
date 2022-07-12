@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>OneSerialPort</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>joevt.PCIeSerialDisable</string>
+			<key>IOClass</key>
+			<string>PCIeSerialDisable</string>
+			<key>IOName</key>
+			<string>PCIeSerialDisable</string>
+			<key>IOPCIMatch</key>
+			<string>0x9100125b</string>
+			<key>IOPCITunnelCompatible</key>
+			<true/>
+			<key>IOProbeScore</key>
+			<integer>30000</integer>
+			<key>IOPropertyMatch</key>
+			<dict>
+				<key>IOChildIndex</key>
+				<integer>1</integer>
+			</dict>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+		</dict>
+	</dict>
+	<key>OSBundleCompatibleVersion</key>
+	<string>1.0.0</string>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IOPCIFamily</key>
+		<string>2.5</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>10.0.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>10.0.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>10.0.0</string>
+	</dict>
+</dict>
+</plist>
